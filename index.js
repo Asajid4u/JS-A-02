@@ -111,9 +111,9 @@ else {
 
 // Q.4 - Second smallest number
 
-let x = 4;
-let y = 10;
-let z = 8;
+let x = 2;
+let y = 25;
+let z = 9;
 if (x != y && x != z && y != z) {
     if (x > y && x < z) {
         console.log(x, 'is the second smallest number among', x, y, z);
