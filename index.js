@@ -111,25 +111,26 @@ else {
 
 // Q.4 - Second smallest number
 
-let a = 10;
-let b = 15;
-let c = 13;
+let s = 10;
+let t = 15;
+let u = 13;
 
 let secSmallest;
 
-if (( a>b && a<c ) || (a<b && a>c)) {
-     console.log (a, '2nd smallest number');
+if (( s>t && s<u ) || (s<t && s>u)) {
+     console.log (s, '2nd smallest number');
 
-}else if ( (b>a && b<c ) || (b<a && b>c) ) {
-    console.log (b, '2nd smallest number');
-}else if ((c>a && c<b) || (c<a && c>b)){ 
-    console.log (c, '2nd smallest number');
-}else if (a==b & a==c) {
+}else if ( (t>s && t<u ) || (t<s && t>u) ) {
+    console.log (t, '2nd smallest number');
+}else if ((u>s && u<t) || (u<s && u>t)){ 
+    console.log (u, '2nd smallest number');
+}else if (s==t & s==u) {
     console.log ('all number equal');
 
 }else {
-    console.log (a,b,c,'two number same ');
+    console.log (s,t,u,'two number same ');
 }
+
 
 // 5-question--Triangle is acute or obtuse.
 
