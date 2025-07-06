@@ -93,13 +93,13 @@ switch (true) {
 let a = 10;
 let b = 9;
 let c = 15;
-if (a > b && a > c && b!=c) {
+if (a > b && a > c && b%c) {
         console.log(a, 'is greater than', b, 'and', c);
 }
-else if (b > a && b > c && a!=c) {
+else if (b > a && b > c && a%c) {
     console.log(b, 'is greater than', a, 'and', c);
 }
-else if (c > a && c > b && a!=b) {
+else if (c > a && c > b && a%b) {
     console.log(c, 'is greater than', a, 'and', b);
 }
 else if (a == b && a == c) {
@@ -111,27 +111,25 @@ else {
 
 // Q.4 - Second smallest number
 
-let x = 2;
-let y = 25;
-let z = 9;
-if (x != y && x != z && y != z) {
-    if (x > y && x < z) {
-        console.log(x, 'is the second smallest number among', x, y, z);
-    }
-    else if (y > x && y < z) {
-        console.log(y, 'is the second smallest number among', x, y, z);
-    }
-    else {
-        console.log(z, 'is the second smallest number among', x, y, z);
-    }
-}
-else if (x == y && x == z) {
-    console.log(x, y, z, 'are equal');
-}
-else {
-    console.log('any two are equal among', x, y, z);
-}
+let a = 10;
+let b = 15;
+let c = 13;
 
+let secSmallest;
+
+if (( a>b && a<c ) || (a<b && a>c)) {
+     console.log (a, '2nd smallest number');
+
+}else if ( (b>a && b<c ) || (b<a && b>c) ) {
+    console.log (b, '2nd smallest number');
+}else if ((c>a && c<b) || (c<a && c>b)){ 
+    console.log (c, '2nd smallest number');
+}else if (a==b & a==c) {
+    console.log ('all number equal');
+
+}else {
+    console.log (a,b,c,'two number same ');
+}
 
 // 5-question--Triangle is acute or obtuse.
 
